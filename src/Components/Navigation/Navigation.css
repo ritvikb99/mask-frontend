@@ -1,0 +1,14 @@
+div.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 10vh;
+  background-color: #4472c4;
+}
+
+div.nav-btn {
+  padding: 1em;
+  margin-inline: 1em;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+}
