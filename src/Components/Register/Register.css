@@ -1,0 +1,10 @@
+* {
+  color: #3f3d56;
+}
+
+div.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

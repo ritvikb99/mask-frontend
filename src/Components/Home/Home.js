@@ -7,7 +7,7 @@ function Home() {
     const img = document.getElementById('img');
     /* img.style.width = '50vw';
     img.style.height = '28vw'; */
-    img.style.transform = 'scale(4)';
+    img.style.transform = 'scale(3.8)';
   });
   return (
     <div id='main'>

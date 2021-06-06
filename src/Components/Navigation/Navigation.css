@@ -6,9 +6,16 @@ div.navbar {
 }
 
 div.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1em;
   padding: 1em;
   margin-inline: 1em;
+  margin-top: 1em;
   font-size: large;
-  color: white;
+  color: #3f3d56;
   cursor: pointer;
+  height: 1em;
 }

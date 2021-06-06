@@ -4,13 +4,13 @@ import './Navigation.css';
 function Navigation(props) {
   return (
     <div className='navbar'>
-      <div className='nav-btn' onClick={() => props.changeRoute('home')}>
+      <div className='nav-btn grow' onClick={(e) => props.changeRoute(e, 'home')}>
         Home
       </div>
-      <div className='nav-btn' onClick={() => props.changeRoute('register')}>
+      <div className='nav-btn grow' onClick={(e) => props.changeRoute(e, 'register')}>
         Register
       </div>
-      <div className='nav-btn' onClick={() => props.changeRoute('signin')}>
+      <div className='nav-btn grow' onClick={(e) => props.changeRoute(e, 'signIn')}>
         SignIn
       </div>
     </div>
