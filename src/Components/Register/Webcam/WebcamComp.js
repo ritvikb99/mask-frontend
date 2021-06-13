@@ -7,8 +7,13 @@ const WebcamComp = (props) => {
   const mediaRecorderRef = React.useRef(null);
   const [capturing, setCapturing] = React.useState(false);
   const [recordedChunks, setRecordedChunks] = React.useState([]);
-
+  var my_interval;
   const handleStartCaptureClick = React.useCallback(() => {
+    var vidBox = document.getElementsByTagName('video')[0];
+    my_interval = setInterval(() => {
+      vidBox.classList.toggle('red');
+    }, 1000);
+
     setTimeout(handleStopCaptureClick, 20000);
     setCapturing(true);
     mediaRecorderRef.current = new MediaRecorder(webcamRef.current.stream, {
@@ -28,11 +33,18 @@ const WebcamComp = (props) => {
   );
 
   const handleStopCaptureClick = React.useCallback(() => {
+    var vidBox = document.getElementsByTagName('video')[0];
+    clearInterval(my_interval);
+    if (vidBox.classList.contains('red')) {
+      vidBox.classList.remove('red');
+    }
     mediaRecorderRef.current.stop();
     setCapturing(false);
   }, [mediaRecorderRef, webcamRef, setCapturing]);
 
   const handleDownload = React.useCallback(() => {
+    var btn = document.getElementById('register');
+    btn.classList.remove('disabled');
     if (recordedChunks.length) {
       const blob = new Blob(recordedChunks, {
         type: 'video/webm',

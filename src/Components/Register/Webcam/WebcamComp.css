@@ -20,6 +20,12 @@ video {
   position: relative;
   left: 5vw;
   max-width: 80vw;
+  transition: all 0.2s ease-out;
+  border: 0.2em solid white;
+}
+
+.red {
+  border: 0.2em solid red;
 }
 
 div.buttons {

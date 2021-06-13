@@ -15,7 +15,7 @@ function Home() {
         <h1>Face Mask Detector</h1>
       </div>
       <div className='image'>
-        <img src={img} alt='home_img' id='img' />
+        <img src={img} id='img' alt='home_img' />
       </div>
     </div>
   );

@@ -19,8 +19,6 @@ input.button {
 
 input.resetable:hover,
 input.resetable:focus {
-  background-color: #4472c4;
-  color: white;
   outline: none;
   border: 1px solid #403b82;
   width: 110%;

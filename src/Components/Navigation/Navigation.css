@@ -3,6 +3,7 @@ div.navbar {
   justify-content: flex-end;
   height: 10vh;
   background-color: #4472c4;
+  align-items: center;
 }
 
 div.nav-btn {
@@ -13,9 +14,20 @@ div.nav-btn {
   border-radius: 1em;
   padding: 1em;
   margin-inline: 1em;
-  margin-top: 1em;
   font-size: large;
   color: #3f3d56;
+  cursor: pointer;
+  height: 1em;
+  flex-shrink: 1;
+}
+
+div.arrow {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-size: 1.5em;
   cursor: pointer;
   height: 1em;
 }

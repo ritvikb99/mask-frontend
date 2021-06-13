@@ -11,7 +11,7 @@ div.main {
   height: 90vh;
 }
 
-img {
+img#img {
   position: relative;
   left: 42vw;
   top: 12vw;

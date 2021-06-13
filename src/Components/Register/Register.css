@@ -8,3 +8,12 @@ div.main {
   align-items: center;
   flex-wrap: wrap;
 }
+
+input.disabled {
+  background-color: grey;
+  border: none;
+}
+
+input.disabled:hover {
+  transform: none;
+}

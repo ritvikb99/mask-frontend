@@ -124,7 +124,7 @@ class Register extends React.Component {
                 </div>
               </fieldset>
               <div className=''>
-                <input onClick={this.onSubmit} className='button grow' type='submit' value='Register' />
+                <input id='register' onClick={this.onSubmit} className='button grow disabled' type='submit' value='Register' />
               </div>
               {this.state.displayMessage === 'invalid-email' ? (
                 <p style={{ color: 'red' }}>Please enter a valid email address </p>

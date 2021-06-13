@@ -1,5 +1,12 @@
 div.main {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+img#signInImg {
+  position: relative;
+  left: 4em;
+  width: 40vw;
+  height: 70vh;
 }
